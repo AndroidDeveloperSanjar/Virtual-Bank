@@ -64,7 +64,6 @@ class MainActivity : AppCompatActivity() {
                         val navView: BottomNavigationView = navView
 
 
-
                         val appBarConfiguration = AppBarConfiguration(
                             setOf(
                                 R.id.fragment_main,

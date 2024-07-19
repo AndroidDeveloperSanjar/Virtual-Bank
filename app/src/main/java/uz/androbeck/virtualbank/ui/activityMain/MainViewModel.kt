@@ -24,9 +24,7 @@ class MainViewModel @Inject constructor(
             if (sharedPreferences.getString(SharePreferenceModule.KEY_FOR_USER_OBJ, null) != null) {
                 // it is gson  and it -> User fo Gson
                 _uiEvent.postValue(MainUiEvent.Successfully)
-                println(" it is registirated")
             } else {
-                println(" it is not registirated")
                 _uiEvent.postValue(MainUiEvent.NotRegistered)
             }
         }

@@ -34,7 +34,6 @@ class RegistrationFragment : BaseFragment(R.layout.fragment_registration) {
 
                 RegistrationUiEvent.Success -> {
                     mainViewModel.checkUserIsRegistered()
-
                 }
             }
         }
