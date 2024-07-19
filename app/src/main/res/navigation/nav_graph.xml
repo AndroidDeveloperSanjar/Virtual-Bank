@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_main">
+
+
+    <fragment
+        android:id="@+id/fragment_main"
+        tools:layout="@layout/activity_main"
+        android:name="uz.androbeck.virtualbank.ui.screens.bottom_nav_items.main.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/fragment_transfer"
+        tools:layout="@layout/fragment_transfer"
+        android:name="uz.androbeck.virtualbank.ui.screens.bottom_nav_items.transfer.TransferFragment"
+        android:label="TransferFragment" />
+    <fragment
+        android:id="@+id/fragment_cards"
+        tools:layout="@layout/fragment_cards"
+        android:name="uz.androbeck.virtualbank.ui.screens.bottom_nav_items.cards.CardsFragment"
+        android:label="CardsFragment" />
+    <fragment
+        android:id="@+id/fragment_profile"
+        tools:layout="@layout/fragment_profile"
+        android:name="uz.androbeck.virtualbank.ui.screens.bottom_nav_items.profile.ProfileFragment"
+        android:label="ProfileFragment" />
 
 </navigation>

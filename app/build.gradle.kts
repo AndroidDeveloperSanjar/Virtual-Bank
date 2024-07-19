@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.ui.desktop)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,4 +74,11 @@ dependencies {
 
     //View binding
     implementation(libs.view.binding)
+
+    // view Pager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    // indecator
+    implementation("me.relex:circleindicator:2.1.6")
+
 }
