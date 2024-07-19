@@ -76,9 +76,11 @@ dependencies {
     implementation(libs.view.binding)
 
     // view Pager2
-    implementation("androidx.viewpager2:viewpager2:1.0.0")
+    implementation(libs.viewpager2)
 
-    // indecator
-    implementation("me.relex:circleindicator:2.1.6")
+    // indicator
+    implementation(libs.indicator)
 
+    //EncryptedSharedPreferences
+    implementation(libs.sharedPreferences)
 }
