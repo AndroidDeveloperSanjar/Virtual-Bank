@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registration_nav_graph"
+    app:startDestination="@id/choseFragment">
+
+    <fragment
+        android:id="@+id/choseFragment"
+        android:name="uz.androbeck.virtualbank.ui.auth.choose.ChoseFragment"
+        android:label="fragment_chose"
+        tools:layout="@layout/fragment_chose" >
+        <action
+            android:id="@+id/action_choseFragment_to_singUpFragment"
+            app:destination="@id/singUpFragment" />
+        <action
+            android:id="@+id/action_choseFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="uz.androbeck.virtualbank.ui.auth.sing_up.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" >
+        <action
+            android:id="@+id/action_singUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="uz.androbeck.virtualbank.ui.auth.log_in.LoginFragment"
+        tools:layout="@layout/fragment_log_in"
+        android:label="LoginFragment" />
+</navigation>
