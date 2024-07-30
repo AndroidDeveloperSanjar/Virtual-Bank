@@ -3,7 +3,6 @@ package uz.androbeck.virtualbank.data.remote.source
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.Retrofit
-import uz.androbeck.virtualbank.data.local.entity.UserEntity
 import uz.androbeck.virtualbank.data.remote.dto.UserModel
 import uz.androbeck.virtualbank.data.remote.service.ApiService
 

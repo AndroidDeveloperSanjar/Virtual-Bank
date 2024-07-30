@@ -8,9 +8,9 @@ import uz.androbeck.virtualbank.data.remote.dto.UserModel
 class LocalDataSourceImpl(
     private val userDao: UserDao
 ) : LocalDataSource {
-    override suspend fun getUserForRoom(id: String): Flow<UserModel> {
+    override suspend fun getUserForRoom(id: Int): Flow<UserModel> {
         return flow {
-            //
+            userDao.getUserById(id)
         }
     }
 }

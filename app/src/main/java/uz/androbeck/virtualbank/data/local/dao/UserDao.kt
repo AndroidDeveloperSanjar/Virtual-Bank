@@ -7,7 +7,6 @@ import androidx.room.Query
 import androidx.room.Update
 import uz.androbeck.virtualbank.data.local.entity.UserEntity
 
-
 @Dao
 interface UserDao {
     @Query("SELECT* FROM userentity")
