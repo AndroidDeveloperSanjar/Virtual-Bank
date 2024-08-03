@@ -9,19 +9,19 @@
         android:id="@+id/transferFragment"
         android:icon="@drawable/ic_transfer"
         android:title="@string/bottom_item_title_transfer" />
-    <!--TODO static text-->
+
     <item
         android:id="@+id/cardsFragment"
         android:icon="@drawable/ic_cards"
-        android:title="Cards" />
-    <!--TODO static text-->
+        android:title="@string/bottom_item_title_cards" />
+
     <item
         android:id="@+id/historyFragment"
         android:icon="@drawable/ic_history"
-        android:title="History" />
+        android:title="@string/bottom_item_title_history" />
 
     <item
         android:id="@+id/profileFragment"
         android:icon="@drawable/ic_profile"
-        android:title="Profile" />
+        android:title="@string/bottom_item_title_profile" />
 </menu>
